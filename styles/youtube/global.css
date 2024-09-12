@@ -1,0 +1,52 @@
+/* YouTube.com Page */
+:root {
+  --yt-img-border-radius: 12px;
+  --yt-regular-border-radius: 12px;
+  --yt-brand-medium-red: #ef4141;
+  --transition-all: all 0.15s ease-in-out;
+  --sans-font: "YouTube Sans";
+  --spacing: 0px;
+  --ytd-miniplayer-playlist-height: 385px;
+}
+
+* {
+  font-family: var(--sans-font) !important;
+  letter-spacing: var(--spacing) !important;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* continuous page scroll disabled */
+.ytd-rich-section-renderer[is-shorts],
+.ytd-statement-banner-renderer,
+#endpoint[title="Shorts"],
+#footer,
+#primary #sections.ytd-guide-renderer > .ytd-guide-renderer:nth-child(n + 3),
+div #contents .ytd-rich-grid-renderer:nth-of-type(n + 13),
+ytd-continuation-item-renderer.ytd-rich-grid-renderer,
+ytd-continuation-item-renderer.ytd-section-list-renderer,
+ytd-feed-filter-chip-bar-renderer,
+ytd-rich-section-renderer.ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* Remove padding at the top of the page */
+#contents.ytd-rich-grid-renderer,
+ytd-rich-grid-renderer[top-row-endorsement] #contents.ytd-rich-grid-renderer {
+  padding-top: 5px;
+}
+
+ytd-masthead[frosted-glass="with-chipbar"] #background.ytd-masthead {
+  height: 56px;
+}
+
+/* home video title */
+#video-title.ytd-rich-grid-media {
+  font-size-adjust: 0.45;
+  font-weight: normal;
+}

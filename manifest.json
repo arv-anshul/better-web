@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Better Web - ARV",
+  "version": "1.0",
+  "description": "Modify CSS of specific websites and make it better to surf and work on.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "host_permissions": ["*://*/*"]
+}
