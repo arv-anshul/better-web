@@ -11,6 +11,10 @@
     {
       "urlPatterns": ["youtube.com/watch/*"],
       "cssFiles": ["styles/youtube/watch.css"]
+    },
+    {
+      "urlPatterns": ["web.whatsapp.com/*"],
+      "cssFiles": ["styles/whatsapp.css"]
     }
   ]
 }

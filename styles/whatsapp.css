@@ -1,0 +1,22 @@
+/* Hide Unwanted Elements */
+#pane-side + div[role="button"],
+._al_c {
+  display: none;
+}
+
+/* Full Screen Width */
+.app-wrapper-web ._aigs {
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Blur Chat Panel */
+#side div[aria-label="Chat list"] > div {
+  transition: 0.2s ease !important;
+  filter: blur(5px) !important;
+}
+#side div[aria-label="Chat list"] > div:hover {
+  filter: blur(0px) !important;
+}
