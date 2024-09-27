@@ -20,3 +20,19 @@
 #side div[aria-label="Chat list"] > div:hover {
   filter: blur(0px) !important;
 }
+
+/* Blur Chat Header */
+#main > header {
+  filter: blur(5px) !important;
+}
+#main > header:hover {
+  filter: blur(0px) !important;
+}
+
+/* Blur sender's number in group chats */
+.os-mac ._ahx_ {
+  filter: blur(5px) !important;
+}
+.os-mac ._ahx_:hover {
+  filter: blur(0px) !important;
+}
