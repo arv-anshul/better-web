@@ -5,14 +5,6 @@
       "cssFiles": ["styles/chatbot.css"]
     },
     {
-      "urlPatterns": ["youtube.com/*"],
-      "cssFiles": ["styles/youtube/global.css"]
-    },
-    {
-      "urlPatterns": ["youtube.com/watch/*"],
-      "cssFiles": ["styles/youtube/watch.css"]
-    },
-    {
       "urlPatterns": ["web.whatsapp.com/*"],
       "cssFiles": ["styles/whatsapp.css"]
     }
