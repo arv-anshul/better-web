@@ -1,3 +1,7 @@
+:root {
+  --base-transition: 0.25s ease-out;
+}
+
 /* Hide Unwanted Elements */
 #pane-side + div[role="button"],
 ._al_c {
@@ -5,7 +9,7 @@
 }
 
 /* Full Screen Width */
-.app-wrapper-web ._aigs {
+#app .app-wrapper-web ._aigs:not(._as6h) {
   top: 0;
   width: 100%;
   max-width: 100%;
@@ -14,7 +18,7 @@
 
 /* Blur Chat Panel */
 #side div[aria-label="Chat list"] > div {
-  transition: 0.2s ease !important;
+  transition: var(--base-transition) !important;
   filter: blur(5px) !important;
 }
 #side div[aria-label="Chat list"] > div:hover {
@@ -23,6 +27,7 @@
 
 /* Blur Chat Header */
 #main > header {
+  transition: var(--base-transition) !important;
   filter: blur(5px) !important;
 }
 #main > header:hover {
@@ -31,6 +36,7 @@
 
 /* Blur sender's number in group chats */
 .os-mac ._ahx_ {
+  transition: var(--base-transition) !important;
   filter: blur(5px) !important;
 }
 .os-mac ._ahx_:hover {
