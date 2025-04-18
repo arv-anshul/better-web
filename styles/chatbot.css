@@ -3,9 +3,8 @@
 }
 
 /* chatgpt.com */
-.xl\:max-w-\[48rem\],
-.xl\:max-w-3xl,
-.md\:max-w-3xl,
-.\@xl\/thread\:max-w-\[48rem\] {
+div[data-message-author-role="user"] .bg-token-message-surface, /* user message */
+.group\/turn-messages, /* assistant message */
+#thread-bottom > div > div  /* text-area */ {
   max-width: 90% !important;
 }
